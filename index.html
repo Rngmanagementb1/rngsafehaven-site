@@ -9,6 +9,8 @@
     header { margin-bottom: 2rem }
     audio { margin-top: 1rem }
     section { margin: 2rem 0; }
+    .youtube-player { margin: 2rem auto; }
+    .youtube-player iframe { border: none; border-radius: 8px; }
   </style>
 </head>
 <body>
@@ -18,11 +20,12 @@
   </header>
 
   <main>
-    <p>Background music (looping):</p>
-    <audio controls loop>
-      <source src="/rng-safe-haven-background-music.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <section>
+      <h2>Background Music</h2>
+      <div class="youtube-player">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/1W-FUM3KN6M?autoplay=1&mute=1&loop=1&playlist=1W-FUM3KN6M" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </section>
 
     <section>
       <h2>Contact Us</h2>
